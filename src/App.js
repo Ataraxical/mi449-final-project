@@ -1,5 +1,5 @@
 import './App.css';
-import {Route, Routes, BrowserRouter} from "react-router-dom";
+import {Route, Routes, HashRouter} from "react-router-dom";
 import Home from "./Home";
 import TopSellers from "./best_sellers";
 import FavoriteBooks from "./my_favorites";
@@ -8,13 +8,13 @@ import FavoriteBooks from "./my_favorites";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/best_sellers" element={<TopSellers />} />
+          <Route exact path="/#/best_sellers" element={<TopSellers />} />
           <Route exact path="/my_favorites" element={<FavoriteBooks />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
