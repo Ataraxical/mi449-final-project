@@ -20,7 +20,7 @@ function Home() {
               style={{minWidth: "0", 
               borderRadius: 10 + "px",
               width: 100 + "%",
-              marginBottom: 1 + "vh"}}></img>
+              marginBottom: 1 + "vh"}} alt="Cover of Baptism of Fire by Andrzej Sapkowski"></img>
               <div class="card-body link-button  clickable" style={{width: 100 + "%",
                   borderRadius: 10 + "px"}}>
                 <p class="card-text nav-text" style={{
@@ -41,7 +41,7 @@ function Home() {
               style={{minWidth: "0", 
               borderRadius: 10 + "px",
               width: 100 + "%",
-              marginBottom: 1 + "vh"}}></img>
+              marginBottom: 1 + "vh"}} alt="Cover of Harry Potter and the Deathly Hallows by JK Rowling"></img>
               <div class="card-body  link-button clickable" style={{width: 100 + "%",
                   borderRadius: 10 + "px"}}>
                 <p class="card-text nav-text" style={{

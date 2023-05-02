@@ -1,6 +1,5 @@
 import React from 'react';
-import axios from 'axios';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './App.css';
 import { supabase } from './supabaseClient';
 
@@ -41,7 +40,7 @@ function FavoriteBooks() {
                   style={{minWidth: "0", 
                   borderRadius: 10 + "px",
                   width: 100 + "%",
-                  marginBottom: 1 + "vh"}}></img>
+                  marginBottom: 1 + "vh"}} alt={`Cover of ${book.title} by ${book.author}`}></img>
                   <div class="card-body clickable" onClick={() => {window.location.href=`${book.amazon_url}`;}} style={{width: 100 + "%",
                       borderRadius: 10 + "px"}}>
                     <p class="card-text book-title" style={{
